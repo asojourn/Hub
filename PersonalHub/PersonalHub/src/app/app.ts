@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,13 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('PersonalHub');
+  title = 'Asojourn';
+
+  // compute once in the class (allowed)
+  currentYear: number = new Date().getFullYear();
+
+  projects = [
+    { name: 'PersonalHub', description: 'Personal homepage and project showcase', url: 'https://github.com/asojourn/Personal-PersonalHub' }
+    // Add more projects here
+  ];
 }
