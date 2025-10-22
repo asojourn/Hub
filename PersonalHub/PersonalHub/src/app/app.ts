@@ -13,8 +13,16 @@ export class App {
   currentYear: number = new Date().getFullYear();
 
   projects = [
-    { name: 'Hub', description: 'Personal homepage and project showcase', url: 'https://github.com/asojourn/Hub' },
-    { name: 'Home Amoritization Chart', description: 'Dynamic Excel spreadsheet that helps you plan and track your mortgage. Download', url: 'https://github.com/asojourn/Hub/PersonalHub/PersonalHub/public/spreadsheets/HomeAmoritizationChart.xlsx' }
+    {
+      name: 'Hub',
+      description: 'Personal homepage and project showcase',
+      url: 'https://github.com/asojourn/Hub'
+    },
+    {
+      name: 'Home Amoritization Chart',
+      description: 'Dynamic Excel spreadsheet that helps you plan and track your mortgage. Download here',
+      url: 'https://github.com/asojourn/Hub/blob/master/PersonalHub/PersonalHub/public/spreadsheets/HomeAmoritizationChart.xlsx'
+    }
     // Add more projects here
   ];
 }
